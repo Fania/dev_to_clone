@@ -123,9 +123,15 @@ main .right {
     color:rgb(47,58,178);
 }
 
+
+
+
+
+
 main .articles article {
     background-color: white;
     border-radius: 7px;
+    margin: 1em 0;
 }
 main .articles article figure {
     margin: 0;
@@ -135,9 +141,23 @@ main .articles article figure {
 
 main .featured figure > img {
     width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+main figcaption {
+    padding: 1em;
+    display: flex;
 }
 main figcaption > img, 
 main article > img {
     width: 30px;
+    height: 30px;
     border-radius: 50%;
+}
+main article p,
+main article date {
+    font-size: .8em;
+}
+main .articles .featured figure figcaption div div,
+main .articles article div div {
+    display: flex;
 }
