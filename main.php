@@ -4,7 +4,16 @@
 
 <main>
     <div class="left">
-        <section class="account"></section>
+        <section class="account">
+            <p>
+                DEV Community is a community of 2,879,980 amazing developers
+            </p>
+            <p>
+                We're a place where coders share, stay up-to-date and grow their careers.
+            </p>
+            <button class="create_account">Create account</button>
+            <button class="log_in">Log in</button>
+        </section>
         <section class="tags">
             <nav>
                 <a href="">Home</a>

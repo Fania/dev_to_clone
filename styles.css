@@ -4,6 +4,7 @@
 
 body {
     font-family: Helvetica, sans-serif;
+    line-height: 1.5;
     margin: 0;
     background: var(--light);
 }
@@ -11,9 +12,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5em;
+    padding: .7em;
     background-color: white;
     margin-bottom: 1em;
+}
+header a {
+    text-decoration: none;
 }
 header .logo {
     background-color: black;
@@ -30,18 +34,18 @@ header .search {
     padding-left: 1em;
 }
 
-header .log_in {
+.log_in {
     background: none;
     border: none;
     padding: .5em 1em;
     border-radius: 5px;
 }
-header .log_in:hover {
+.log_in:hover {
     background: rgb(59,73,223,0.1);
     text-decoration: underline;
     color:rgb(47,58,178);
 }
-header .create_account {
+.create_account {
     background: none;
     border: none;
     padding: 4.667px 11.333px;
@@ -49,11 +53,15 @@ header .create_account {
     border: 2px solid rgb(47,58,178);
     color:rgb(47,58,178);
 }
-header .create_account:hover {
+.create_account:hover {
     text-decoration: underline;
     color:white;
     background: rgb(47,58,178);
 }
+
+
+
+
 
 
 main {
@@ -62,14 +70,40 @@ main {
 
 main .left {
     width: 20%;
+    margin: 0 10px;
 }
 main .articles {
     width: 60%;
-    margin: 0 1em;
+    margin: 0 10px;
 }
 main .right {
     width: 20%;
+    margin: 0 10px;
 }
+
+
+
+
+.account {
+    background-color: white;
+    padding: 1em;
+    border-radius: 7px;
+}
+.account p:first-child {
+    font-weight: 600;
+    margin-top: 0;
+}
+.account button {
+    width: 100%;
+    margin: 1px;
+}
+
+
+
+
+
+
+
 
 
 .tags nav {
