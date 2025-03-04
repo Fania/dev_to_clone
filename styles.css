@@ -1,0 +1,109 @@
+:root {
+    --light: rgb(246,246,246);
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    background: var(--light);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em;
+    background-color: white;
+    margin-bottom: 1em;
+}
+header .logo {
+    background-color: black;
+    border-radius: 2px;
+    color: white;
+    padding: 5px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    margin: .5em;
+}
+header .search {
+    width: 50vw;
+    height: 2em;
+    padding-left: 1em;
+}
+
+header .log_in {
+    background: none;
+    border: none;
+    padding: .5em 1em;
+    border-radius: 5px;
+}
+header .log_in:hover {
+    background: rgb(59,73,223,0.1);
+    text-decoration: underline;
+    color:rgb(47,58,178);
+}
+header .create_account {
+    background: none;
+    border: none;
+    padding: 4.667px 11.333px;
+    border-radius: 5px;
+    border: 2px solid rgb(47,58,178);
+    color:rgb(47,58,178);
+}
+header .create_account:hover {
+    text-decoration: underline;
+    color:white;
+    background: rgb(47,58,178);
+}
+
+
+main {
+    display: flex;
+}
+
+main .left {
+    width: 20%;
+}
+main .articles {
+    width: 60%;
+    margin: 0 1em;
+}
+main .right {
+    width: 20%;
+}
+
+
+.tags nav {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1em; */
+}
+.tags nav a {
+    text-decoration: none;
+    color: black;
+    padding: .5em 1em;
+    border-radius: 5px;
+}
+.tags nav a:hover {
+    background: rgb(59,73,223,0.1);
+    text-decoration: underline;
+    color:rgb(47,58,178);
+}
+
+main .articles article {
+    background-color: white;
+    border-radius: 7px;
+}
+main .articles article figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main .featured figure > img {
+    width: 100%;
+}
+main figcaption > img, 
+main article > img {
+    width: 30px;
+    border-radius: 50%;
+}
