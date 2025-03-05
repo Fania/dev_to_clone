@@ -3,5 +3,5 @@
 ?>
 
 <footer>
-    <p>Fania Raczinski Copyright 2025</p>
+    <p><?=$author?> Copyright 2025</p>
 </footer>
