@@ -121,7 +121,7 @@
 
     <div class="right">
         <section class="threads">
-            <h4>#dicuss</h4>
+            <h4>#discuss</h4>
             <p>Discussion threads targeting the whole community</p>
             <p>Meme Monday</p>
             <p>43 comments</p>
