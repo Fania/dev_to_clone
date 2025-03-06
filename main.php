@@ -17,25 +17,29 @@ $articles = $connection->query("SELECT ArticleID, Title, Featured, CreatedAt, Av
         </section>
         <section class="tags">
             <nav>
-                <a href="">Home</a>
-                <a href="">DEV++</a>
-                <a href="">Podcasts</a>
-                <a href="">Videos</a>
-                <a href="">Tags</a>
-                <a href="">Dev Help</a>
-                <a href="">Forem Shop</a>
-                <a href="">Advertise on DEV</a>
-                <a href="">DEV Challenges</a>
-                <a href="">DEV Showcase</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
-                <a href="">Free Postgres Database</a>
+                <a href=""><span style="color: orange"><i class="fa-solid fa-house-user"></i></span> Home</a>
+                <a href=""><span style="color: blue"><i class="fa-solid fa-comment"></i></span> DEV++</a>
+                <a href=""><span style="color: gray"><i class="fa-solid fa-microphone"></i></span> Podcasts</a>
+                <a href=""><span style="color: gray"><i class="fa-solid fa-video"></i></span> Videos</a>
+                <a href=""><span style="color: orange"><i class="fa-solid fa-tags"></i></span> Tags</a>
+                <a href=""><span style="color: orange"><i class="fa-solid fa-lightbulb"></i></span> Dev Help</a>
+                <a href=""><span style="color: purple"><i class="fa-solid fa-bag-shopping"></i></span> Forem Shop</a>
+                <a href=""><span style="color: red"><i class="fa-solid fa-heart"></i></span> Advertise on DEV</a>
+                <a href=""><span style="color: orange"><i class="fa-solid fa-trophy"></i></span> DEV Challenges</a>
+                <a href=""><span style="color: orange"><i class="fa-solid fa-star"></i></span> DEV Showcase</a>
+                <a href=""><span style="color: orange"><i class="fa-solid fa-face-smile"></i></span> About</a>
+                <a href=""><span style="color: orange"><i class="fa-solid fa-bullhorn"></i></span> Contact</a>
+                <a href=""><span style="color: orange"><i class="fa-solid fa-circle-question"></i></span> Software Comparisons</a>
             </nav>
         </section>
     </div>
 
     <section class="articles">
-
+        <nav>
+            <a href=""><strong>Relevant</strong></a>
+            <a href="">Latest</a><a href="">Top</a>
+        </nav>
+        <p><?= $application_title?></p> 
         <article class="featured">
             <figure>
                 <img src="imgs/featured.jpg" alt="">
@@ -80,19 +84,15 @@ $articles = $connection->query("SELECT ArticleID, Title, Featured, CreatedAt, Av
                 <p>Evolution of Decentralized Identity and Verifiable Credentials</p>
             </article>
             <article>
-                <p>This Is Probably the Most Lightweight Columnar Storage Technology</p>
+                <p>What are the most important things I need to know as new coder?(I want to get a job in the field ...</p>
             </article>
             <article>
-                <p>Evolution of Decentralized Identity and Verifiable Credentials</p>
+                <p>Let's see what happens. Good luck everyone!</p>
             </article>
-            <article>
-                <p>This Is Probably the Most Lightweight Columnar Storage Technology</p>
-            </article>
-            <article>
-                <p>Evolution of Decentralized Identity and Verifiable Credentials</p>
-            </article>
+        </section>
+        <section class="resources">
+
 
         </section>
-        <section class="resources"></section>
     </div>
 </main>

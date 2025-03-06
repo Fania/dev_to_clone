@@ -1,5 +1,9 @@
 :root {
     --light: rgb(246,246,246);
+    --fa-red: red;
+    --fa-purple: purple;
+    --fa-gray: gray;
+    --fa-yellow: yellow;
 }
 
 body {
@@ -73,11 +77,11 @@ main .left {
     margin: 0 10px;
 }
 main .articles {
-    width: 60%;
+    width: 55%;
     margin: 0 10px;
 }
 main .right {
-    width: 20%;
+    width: 25%;
     margin: 0 10px;
 }
 
@@ -128,10 +132,28 @@ main .right {
 
 
 
+
+main .articles nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5em;
+}
+main .articles nav a {
+    text-decoration: none;
+    color: black;
+}
+main .articles nav a:hover {
+    color: blue;
+}
 main .articles article {
     background-color: white;
     border-radius: 7px;
     margin: 1em 0;
+    display: flex;
+    gap: 10px;
+}
+main .articles article:not(.featured) {
+    padding: 2em;
 }
 main .articles article figure {
     margin: 0;
@@ -146,12 +168,15 @@ main .featured figure > img {
 main figcaption {
     padding: 1em;
     display: flex;
+    gap: 10px;
 }
 main figcaption > img, 
 main article > img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    position: relative;
+    top: 10px;
 }
 main article p,
 main article date {
@@ -160,4 +185,24 @@ main article date {
 main .articles .featured figure figcaption div div,
 main .articles article div div {
     display: flex;
+}
+
+
+.threads > h4 {
+    margin-bottom: 0;
+}
+.threads > h4 + p {
+    font-size: .8em;
+    margin-top: 0;
+}
+.threads p:nth-child(3) {
+    margin-bottom: 0;
+}
+.threads p:nth-child(4) {
+    font-size: .8em;
+    color: gray;
+    margin-top: 0;
+}
+.threads article {
+    margin: 2em 0;
 }

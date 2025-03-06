@@ -3,5 +3,5 @@
 ?>
 
 <footer>
-    <p><?=$author?> Copyright 2025</p>
+    <p>Copyright 2025</p>
 </footer>
