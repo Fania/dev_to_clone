@@ -1,0 +1,9 @@
+; Replicate this file with your Credentials
+; Save it as config.ini
+; Make sure it cannot be loaded directly in the browser!
+
+[database]
+host = localhost
+dbname = dev_to
+username = dev_to_user
+password = my_secret_password

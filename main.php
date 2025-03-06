@@ -1,5 +1,6 @@
 <?php
-    global $application_title;
+include './db/db.php';
+$articles = $connection->query("SELECT ArticleID, Title, Featured, CreatedAt, Avatar, Name as AuthorName FROM Articles JOIN Users ON (AuthorID=UserID)");
 ?>
 
 <main>
@@ -50,72 +51,19 @@
                             <p>4 comments</p>
                             <p>4 min read</p>
                             <p>bookmark</p>
-                        </div>  
+                        </div>
                     </div>
                 </figcaption>
             </figure>
         </article>
-        <article>
-            <img src="imgs/jazini.jpg" alt="">
-            <div>
-                <p>Mahdi Jazini</p>
-                <date>Mar 4</date>
-                <h3>Codemod in Next.js 15: Updating Your Project Has Never Been Easier!</h3>
-                <p>#nextjs #webdev #frontend #programming</p>
-                <div>
-                    <p>25 reactions</p>
-                    <p>7 comments</p>
-                    <p>4 min read</p>
-                    <p>bookmark</p>
-                </div>  
-            </div>
-        </article>
-        <article>
-            <img src="imgs/jazini.jpg" alt="">
-            <div>
-                <p>Mahdi Jazini</p>
-                <date>Mar 4</date>
-                <h3>Codemod in Next.js 15: Updating Your Project Has Never Been Easier!</h3>
-                <p>#nextjs #webdev #frontend #programming</p>
-                <div>
-                    <p>25 reactions</p>
-                    <p>7 comments</p>
-                    <p>4 min read</p>
-                    <p>bookmark</p>
-                </div>  
-            </div>
-        </article>
-        <article>
-            <img src="imgs/jazini.jpg" alt="">
-            <div>
-                <p>Mahdi Jazini</p>
-                <date>Mar 4</date>
-                <h3>Codemod in Next.js 15: Updating Your Project Has Never Been Easier!</h3>
-                <p>#nextjs #webdev #frontend #programming</p>
-                <div>
-                    <p>25 reactions</p>
-                    <p>7 comments</p>
-                    <p>4 min read</p>
-                    <p>bookmark</p>
-                </div>  
-            </div>
-        </article>
-        <article>
-            <img src="imgs/jazini.jpg" alt="">
-            <div>
-                <p>Mahdi Jazini</p>
-                <date>Mar 4</date>
-                <h3>Codemod in Next.js 15: Updating Your Project Has Never Been Easier!</h3>
-                <p>#nextjs #webdev #frontend #programming</p>
-                <div>
-                    <p>25 reactions</p>
-                    <p>7 comments</p>
-                    <p>4 min read</p>
-                    <p>bookmark</p>
-                </div>  
-            </div>
-        </article>
 
+
+        <?php
+        foreach ($articles as $article) {
+            // $tags = $connection->query("SELECT TagName FROM TaggedArticles JOIN Tags USING (TagID) WHERE ArticleID = ?", $article['ArticleID']);
+            include "templates/article-template.php";
+        }
+        ?>
 
     </section>
 
