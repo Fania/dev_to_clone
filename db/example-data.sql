@@ -45,22 +45,26 @@ INSERT INTO Tags (TagName) VALUES
 ("webdev"), 
 ("ai"),
 ("programming"),
+("softwaredevelopment"),
+("softwareengineering"),
 ("nextjs"),
 ("frontend");
 
 INSERT INTO Users (Name, Avatar) VALUES
 ("Walter", "imgs/walter.png"), 
+("Jake Lundberg", "imgs/jake.png"), 
 ("Mahdi Jazini", "imgs/jazini.jpg");
 
 INSERT INTO Articles (Title, Featured, AuthorID) VALUES
-("It’s Not A.I. — Junior Developers Have Always Struggled to Code", 0, 1),
-("Codemod in Next.js 15: Updating Your Project Has Never Been Easier!", 0, 2);
+("It’s Not A.I. — Junior Developers Have Always Struggled to Code", 1, 1),
+("Building for Users: The Real Purpose of Software Development", 0, 2),
+("Codemod in Next.js 15: Updating Your Project Has Never Been Easier!", 0, 3);
 
 INSERT INTO TaggedArticles (ArticleID, TagID) VALUES
 (1, 1),
 (1, 2),
 (1, 3),
 (2, 4),
-(2, 2),
 (2, 5),
-(2, 3);
+(3, 6),
+(3, 7);
