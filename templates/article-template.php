@@ -1,4 +1,4 @@
-<article<?php echo $article['Featured'] ? " class=featured" : "" ?>>
+<article<?= $article['Featured'] ? " class=featured" : "" ?>>
     <img src="<?=$article['Avatar']?>" alt="">
     <div>
         <p><?= $article['AuthorName'] ?></p>

@@ -32,6 +32,9 @@ header .logo {
     font-weight: 600;
     margin: .5em;
 }
+header form {
+    display: inline;
+}
 header .search {
     width: 50vw;
     height: 2em;

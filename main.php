@@ -1,6 +1,11 @@
 <?php
 include './db/db.php';
 $articles = $connection->query("SELECT ArticleID, Title, Featured, CreatedAt, Avatar, Name as AuthorName FROM Articles JOIN Users ON (AuthorID=UserID)");
+
+$searchTerm = (!isset($_POST['search'])) ? '' : $_POST['search'];
+// var_dump($searchTerm);
+$searchQuery = $connection->query("SELECT ArticleID, Title, Featured, CreatedAt, Avatar, Name as AuthorName FROM Articles JOIN Users ON (AuthorID=UserID) WHERE title LIKE '%$searchTerm%'");
+// var_dump($searchQuery->fetchAll());
 ?>
 
 <main>
@@ -63,7 +68,8 @@ $articles = $connection->query("SELECT ArticleID, Title, Featured, CreatedAt, Av
 
 
         <?php
-        foreach ($articles as $article) {
+        // foreach ($articles as $article) {
+        foreach ($searchQuery as $article) {    
             // $tags = $connection->query("SELECT TagName FROM TaggedArticles JOIN Tags USING (TagID) WHERE ArticleID = ?", $article['ArticleID']);
             include "templates/article-template.php";
         }
