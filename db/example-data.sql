@@ -53,7 +53,7 @@ INSERT INTO Users (Name, Avatar) VALUES
 ("Mahdi Jazini", "imgs/jazini.jpg");
 
 INSERT INTO Articles (Title, Featured, AuthorID) VALUES
-("It’s Not A.I. — Junior Developers Have Always Struggled to Code", 1, 1),
+("It’s Not A.I. — Junior Developers Have Always Struggled to Code", 0, 1),
 ("Codemod in Next.js 15: Updating Your Project Has Never Been Easier!", 0, 2);
 
 INSERT INTO TaggedArticles (ArticleID, TagID) VALUES
